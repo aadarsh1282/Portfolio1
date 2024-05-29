@@ -43,3 +43,24 @@ print("The sales value for laptop is: ", laptops_sales_value)
 print("The sales value for watch is: ", watch_sales_value)
 print("The sales value for airpod is: ", airpods_sales_value)
 print("The sales value for tv is: ", tv_sales_value)
+
+# Import math module to get the value of pi
+import math
+
+# To calculate the area of a circle for given radius
+def calculate_circle_area(radius):
+    # Using value of pi through the math module
+    pi = math.pi
+    # Area: pi * radius squared
+    area = pi * (radius ** 2)
+    return area
+
+# For the radius
+radius = float(input("Enter the radius of the circle: "))
+
+# Area of the circle
+area = calculate_circle_area(radius)
+
+# Displaying result
+print(f"The area of the circle is: {area}")
+
